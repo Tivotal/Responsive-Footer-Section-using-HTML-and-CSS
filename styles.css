@@ -1,0 +1,211 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border-top: 2px solid rgba(0, 0, 0, 0.06);
+}
+
+.footer .wrapper .row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 5rem;
+}
+
+.footer .col {
+  width: calc(100% / 3 - 15px);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer .col .info {
+  display: flex;
+  align-items: center;
+}
+
+.footer .col .info i {
+  font-size: 30px;
+  color: #4070f4;
+  padding-right: 10px;
+}
+
+.footer .col h2 {
+  font-size: 18px;
+}
+
+.footer span {
+  font-size: 14px;
+}
+
+.footer .wrapper .row:nth-child(1)::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 85%;
+  background: rgba(0, 0, 0, 0.06);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer .logo {
+  width: 150px;
+}
+
+.footer .social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer .icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #222;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.footer .header {
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer .header::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: #4070f4;
+  bottom: 0;
+  border-radius: 10px;
+}
+
+.footer .links {
+  display: flex;
+  gap: 50px;
+}
+
+.footer .links .link {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1b1b1b;
+  white-space: nowrap;
+  margin-bottom: -10px;
+  transition: all 0.3s ease;
+}
+
+.footer .links .link:hover {
+  color: #4070f4;
+  text-decoration: underline;
+}
+
+.footer form {
+  display: flex;
+  height: 40px;
+}
+
+.footer form input {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 15px;
+  color: #000;
+}
+
+.footer form button {
+  border: none;
+  background: #4070f4;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer form button:hover {
+  background: #3f58f8;
+}
+
+.footer .copyright-section {
+  background: #c4c4c4;
+}
+
+.footer .content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer .content span a {
+  text-decoration: none;
+  color: #4070f4;
+}
+
+.copyright-section .links {
+  gap: 15px;
+  height: 100%;
+}
+
+.copyright-section .links .link {
+  font-size: 14px;
+  color: #959595;
+}
+
+@media (max-width: 880px) {
+  .footer {
+    position: relative;
+  }
+  .footer .wrapper .row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer .wrapper .row .col {
+    width: calc(100% / 2 - 15px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .copyright-section .content {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer .wrapper .row .col {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer .wrapper .row {
+    padding: 2rem 2rem;
+  }
+}
